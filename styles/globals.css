@@ -8,6 +8,21 @@ body {
   background-color: #171717;
 }
 
+::-moz-selection {
+  background: #ffb7b7;
+  color: #fefefe;
+}
+::-webkit-scrollbar {
+    width: 5px;
+} 
+::-webkit-scrollbar-track {
+    background: #666;
+} 
+::-webkit-scrollbar-thumb {
+    background: #c2c2c2;
+    border-radius: 50px;
+}
+
 a {
   color: inherit;
   text-decoration: none;

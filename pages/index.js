@@ -2,6 +2,7 @@ import React from 'react';
 import Head from 'next/head';
 import styles from '../styles/Home.module.css';
 import { Navbar } from '../components/navbar';
+import Footer from '../components/Footer/Footer';
 
 export default function Home() {
   return (
@@ -31,6 +32,7 @@ export default function Home() {
 
         <h3>Welcome to Next.js News App by <a href='https://naufalakbar.me' target='_blank' className={styles.link} rel="noreferrer">Naufal Akbar Nugroho</a>.</h3>
       </div>
+      <Footer />
     </div>
   );
 }

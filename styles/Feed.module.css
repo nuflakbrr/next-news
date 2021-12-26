@@ -35,12 +35,19 @@
 }
 
 .paginator .active {
+    color: white;
     cursor: pointer;
+    background-color: #171717;
+    border: none;
+    font-size: medium;
 }
 
 .paginator .disabled {
     cursor: not-allowed;
     color: rgb(179, 179, 179);
+    background-color: #171717;
+    border: none;
+    font-size: medium;
 }
 
 @media (max-width: 800px) {

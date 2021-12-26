@@ -1,6 +1,7 @@
 import Head from 'next/head';
 import styles from '../styles/About.module.css';
 import { Navbar } from '../components/navbar';
+import Footer from '../components/Footer/Footer';
 
 export const EOM = ({ employee }) => {
   return (
@@ -41,6 +42,8 @@ export const EOM = ({ employee }) => {
           </div>
         </div>
       </div>
+
+      <Footer />
     </>
   );
 };

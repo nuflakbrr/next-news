@@ -2,6 +2,7 @@ import Head from 'next/head';
 import { useRouter } from 'next/router';
 import styles from '../../styles/Feed.module.css';
 import { Navbar } from '../../components/navbar';
+import Footer from '../../components/Footer/Footer';
 
 export const Feed = ({ articles, pageNumber }) => {
   const router = useRouter();
@@ -27,7 +28,7 @@ export const Feed = ({ articles, pageNumber }) => {
         </div>
 
         <div className={styles.paginator}>
-          <div
+          <button
             className={pageNumber === 1 ? styles.disabled : styles.active}
             onClick={() => {
               if (pageNumber > 1) {
@@ -41,11 +42,11 @@ export const Feed = ({ articles, pageNumber }) => {
             }}
           >
             Previous Page
-          </div>
+          </button>
 
           <div>{pageNumber}</div>
 
-          <div
+          <button
             className={pageNumber === 5 ? styles.disabled : styles.active}
             onClick={() => {
               if (pageNumber < 5) {
@@ -59,8 +60,9 @@ export const Feed = ({ articles, pageNumber }) => {
             }}
           >
             Next Page
-          </div>
+          </button>
         </div>
+        <Footer />
       </div>
     </>
   ) : (
@@ -69,6 +71,7 @@ export const Feed = ({ articles, pageNumber }) => {
       <div className={styles.main}>
         <h1>Oops! No articles for this page</h1>
       </div>
+      <Footer />
     </div>
   );
 };
