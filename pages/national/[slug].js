@@ -8,7 +8,7 @@ export const Feed = ({ articles, pageNumber }) => {
   return articles.length ? (
     <>
       <Head>
-      <title>National News - Naufal Akbar Nugroho</title>
+        <title>National News - Naufal Akbar Nugroho</title>
         <meta property="og:image" content={articles[0]?.urlToImage} />
         <meta property="og:description" content={articles[0]?.description} />
         <meta property="og:title" content={articles[0]?.title + ' and more!'} />
@@ -36,7 +36,7 @@ export const Feed = ({ articles, pageNumber }) => {
                 // This however is being worked on and is fixed in canary.
                 // Show this in tutorial vid:
                 // https://github.com/vercel/next.js/issues/3249
-                router.push(`/international/${pageNumber - 1}`).then(() => window.scrollTo(0, 0));
+                router.push(`/national/${pageNumber - 1}`).then(() => window.scrollTo(0, 0));
               }
             }}
           >
@@ -54,7 +54,7 @@ export const Feed = ({ articles, pageNumber }) => {
                 // This however is being worked on and is fixed in canary.
                 // Show this in tutorial vid:
                 // https://github.com/vercel/next.js/issues/3249
-                router.push(`/international/${pageNumber + 1}`).then(() => window.scrollTo(0, 0));
+                router.push(`/national/${pageNumber + 1}`).then(() => window.scrollTo(0, 0));
               }
             }}
           >
@@ -86,7 +86,7 @@ export const getServerSideProps = async pageContext => {
   }
 
   const apiResponse = await fetch(
-    `https://newsapi.org/v2/top-headlines?country=id&from=2021-12-26&sortBy=popularity&pageSize=5&page=${pageNumber}&apiKey=caaca86b60774c89b0c0f6ee07d8e0bc`,
+    `https://newsapi.org/v2/top-headlines?country=id&pageSize=5&page=${pageNumber}&apiKey=caaca86b60774c89b0c0f6ee07d8e0bc`,
     {
       headers: {
         Authorization: `Bearer ${process.env.NEXT_PUBLIC_NEWS_KEY}`,

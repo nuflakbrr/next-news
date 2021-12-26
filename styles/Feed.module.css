@@ -3,13 +3,14 @@
     margin-top: 50px;
     align-items: center;
     flex-direction: column;
+    color: white;
 }
 
 .post {
     width: 800px;
     margin-bottom: 25px;
     padding-bottom: 25px;
-    border-bottom: 1px solid black;
+    border-bottom: 1px solid white;
 }
 
 .post img {
@@ -26,6 +27,7 @@
     width: 100%;
     display: flex;
     justify-content: center;
+    color: white;
 }
 
 .paginator div {

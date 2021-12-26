@@ -4,6 +4,7 @@
     align-items: center;
     flex-direction: column;
     margin-top: 50px;
+    color: white;
 }
 
 .employeeOfTheMonth {
@@ -12,5 +13,7 @@
 
 .employeeOfTheMonth img {
     width: 250px;
+    height: 250px;
+    object-fit: cover;
     border-radius: 100%;
 }

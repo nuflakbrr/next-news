@@ -4,6 +4,7 @@
   align-items: center;
   flex-direction: column;
   justify-content: center;
+  color: white;
 }
 
 .main h1 {
@@ -11,10 +12,10 @@
 }
 
 .link {
-  color: blue;
+  color: #3182ce;
   text-decoration: underline;
 }
 
 .link:hover {
-  color: darkblue;
+  color: #095296;
 }
