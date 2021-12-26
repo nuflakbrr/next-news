@@ -14,13 +14,13 @@ export default function Home() {
             content="Welcome to Next.js News App by Naufal Akbar Nugroho"
           />
 
-          <meta property="og:title" content="About Me - Naufal Akbar Nugroho" />
+          <meta property="og:title" content="Home - Naufal Akbar Nugroho" />
           <meta
             property="og:description"
             content="Welcome to Next.js News App by Naufal Akbar Nugroho"
           />
 
-          <meta property="twitter:title" content="About Me - Naufal Akbar Nugroho" />
+          <meta property="twitter:title" content="Home - Naufal Akbar Nugroho" />
           <meta
             property="twitter:description"
             content="Welcome to Next.js News App by Naufal Akbar Nugroho"
