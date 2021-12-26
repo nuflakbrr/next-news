@@ -7,11 +7,11 @@
     color: white;
 }
 
-.employeeOfTheMonth {
+.about {
     text-align: center;
 }
 
-.employeeOfTheMonth img {
+.about img {
     width: 250px;
     height: 250px;
     object-fit: cover;
@@ -24,11 +24,11 @@
         padding: 30px;
     }
 
-    .employeeOfTheMonth {
+    .about {
         margin-top: 50px;
     }
 
-    .employeeOfTheMonth img {
+    .about img {
         width: 150px;
         height: 150px;
     }
