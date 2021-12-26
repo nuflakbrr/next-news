@@ -7,7 +7,7 @@ const Footer = () => {
         <footer>
             <div>
                 <div style={{ display: "flex", flexDirection: "row", alignItems: "center", justifyContent: "center", color: "white" }}>
-                    <h5 style={{ marginRight: "30px" }}>Naufal Akbar Nugroho</h5>
+                    <h5 style={{ marginRight: "30px" }}><a href="https://naufalakbar.me/" target="_blank" rel="noreferrer">Naufal Akbar Nugroho</a></h5>
                     <SocialMediaLinks />
                 </div>
                 <Copyright />
