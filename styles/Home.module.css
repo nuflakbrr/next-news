@@ -19,3 +19,10 @@
 .link:hover {
   color: #095296;
 }
+
+@media (max-width: 800px) {
+  .main {
+    flex-direction: column;
+    padding: 30px;
+  }
+}

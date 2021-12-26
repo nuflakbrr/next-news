@@ -14,3 +14,9 @@
 .main div:hover {
     color: rgb(168, 168, 168);
 }
+
+@media (max-width: 800px) {
+    .main {
+        padding: 30px;
+    }
+}

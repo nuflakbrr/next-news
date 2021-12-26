@@ -17,3 +17,19 @@
     object-fit: cover;
     border-radius: 100%;
 }
+
+@media (max-width: 800px) {
+    .main {
+        flex-direction: column;
+        padding: 30px;
+    }
+
+    .employeeOfTheMonth {
+        margin-top: 50px;
+    }
+
+    .employeeOfTheMonth img {
+        width: 150px;
+        height: 150px;
+    }
+}
